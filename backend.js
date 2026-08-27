@@ -32,7 +32,7 @@ input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') addIdea();
 });
 
-// Make ites clickable
+// Make items clickable
 list.addEventListener('click', (e) => {
   const item = e.target.closest('.idea-item');
   if (!item) return;
@@ -45,4 +45,4 @@ list.addEventListener('click', (e) => {
   document.querySelectorAll('.idea-item').forEach(el => el.classList.remove('selected'));
   item.classList.add('selected');
   console.log('Clicked idea:', idea);
-});
+});     
