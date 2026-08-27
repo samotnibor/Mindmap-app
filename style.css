@@ -1,0 +1,32 @@
+/* Makes padding/border count *inside* an element's declared width,
+   instead of adding to it — nearly everyone turns this on globally */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif; /* uses the OS's default font, no download needed */
+  background-color: #f5f5f4;          /* soft off-white, easier on the eyes than pure white */
+  color: #292524;                     /* dark warm gray instead of pure black */
+  display: flex;
+  flex-direction: column;   /* stack children top to bottom */
+  align-items: center;      /* center everything horizontally */
+  min-height: 100vh;        /* fill the full screen height even with little content */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;   /* keeps text/content from stretching too wide on big screens */
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;         /* even spacing between children, no manual margins needed */
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #44403c;
+}
