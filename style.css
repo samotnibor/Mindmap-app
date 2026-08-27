@@ -30,3 +30,15 @@ h1 {
   font-weight: 600;
   color: #44403c;
 }
+
+.idea-item {
+  padding: 0.75rem 1rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e7e5e4;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.idea-item:hover { background-color: #ede9e0; }
+.idea-item.selected { border-color: #44403c; background-color: #ede9e0; }
