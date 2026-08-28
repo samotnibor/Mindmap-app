@@ -114,10 +114,12 @@ list.addEventListener('click', (e) => {
   const id = Number(item.dataset.id);
 
   if (e.target.closest('.delete-btn')) {
+    if (confirm('Delete this idea?')) {
     ideas = ideas.filter(i => i.id !== id);
     saveIdeas();
     render();
     return;
+    }
   }
 
   if (e.target.closest('.edit-btn')) {
