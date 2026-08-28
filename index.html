@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="script.js"></script>
 <body>
   <div class="container">
     <!-- Heading -->
@@ -18,6 +17,16 @@
     <button id="add-btn">Add</button>
     </div>
 
+    <!-- Sorting buttons -->
+    <select id="sort-select">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="az">A – Z</option>
+        <option value="za">Z – A</option>
+    </select>
+
+    <!-- Idea list -->
     <ul id="idea-list"></ul>
+    <script src="backend.js"></script>
 </body>
 </html>

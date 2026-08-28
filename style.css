@@ -8,7 +8,7 @@
 
 body {
   font-family: system-ui, sans-serif; /* uses the OS's default font, no download needed */
-  background-color: #f5f5f4;          /* soft off-white, easier on the eyes than pure white */
+  background-color: #f5f5f4;          /* soft off-white, easier on the eyes than pure white <3 Hannah*/
   color: #292524;                     /* dark warm gray instead of pure black */
   display: flex;
   flex-direction: column;   /* stack children top to bottom */
@@ -38,6 +38,36 @@ h1 {
   border: 1px solid #e7e5e4;
   cursor: pointer;
   transition: background-color 0.15s;
+}
+
+.idea-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.idea-text { flex: 1; }
+
+.edit-btn, .delete-btn, .save-btn {
+  padding: 0.25rem 0.6rem;
+  border: 1px solid #e7e5e4;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover { background: #fee2e2; border-color: #fca5a5; }
+.edit-btn:hover, .save-btn:hover { background: #ede9e0; }
+
+.edit-input {
+  flex: 1;
+  padding: 0.4rem;
+  border: 1px solid #a8a29e;
+  border-radius: 4px;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .idea-item:hover { background-color: #ede9e0; }
