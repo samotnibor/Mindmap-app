@@ -145,12 +145,6 @@ list.addEventListener('click', (e) => {
   console.log('Clicked idea:', ideas.find(i => i.id === id));
 });
 
-  // Placeholder — this is exactly where the mindmap will open once you
-  // build step 8. For now, just prove the click is wired up.
-  document.querySelectorAll('.idea-item').forEach(el => el.classList.remove('selected'));
-  item.classList.add('selected');
-  console.log('Clicked idea:', idea);
-;     
 
 document.querySelector('#sort-select').addEventListener('change', render);
 
